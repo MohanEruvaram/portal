@@ -11,6 +11,7 @@ public class Mohan {
 java.sql.Connection con=DriverManager.getConnection("jdbc:odbc:login");
 java.sql.Statement st=con.createStatement();
 java.sql.ResultSet rs=st.executeQuery("select * from mohan");
+	System.out.println("Mohan");
 while(rs.next()) {
 	System.out.println(rs.getInt(0)+"__________________"+rs.getInt(1));
 }
